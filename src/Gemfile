@@ -1,0 +1,4 @@
+source 'http://rubygems.org'
+
+# Specify dependencies in sep6-client.gemspec
+gemspec
