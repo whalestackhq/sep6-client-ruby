@@ -5,8 +5,8 @@ require 'sep6_client/config'
 require 'uri'
 require 'openssl'
 
- # Ruby implementation of a REST client for the COINQVEST Merchant API
- # see https://www.coinqvest.com/en/api-docs
+ # Ruby implementation of a REST client for the Whalestack Merchant API
+ # see https://www.whalestack.com/en/api-docs
 module Sep6Client
 
   class Client
@@ -23,7 +23,7 @@ module Sep6Client
       # @string The current version of this SDK, used in the HTTP user agent (leave it as is)
       @client_version = Sep6Client::CLIENT_VERSION
 
-      # @string COINQVEST connect url
+      # @string Whalestack connect url
       @transfer_server = transfer_server ? transfer_server : Sep6Client::TRANSFER_SERVER
 
       # @string|nil Specifies the log file to which to write, if any.
@@ -131,7 +131,7 @@ module Sep6Client
 
     end
 
-    # private class to generate connect url on COINQVEST servers
+    # private class to generate connect url on Whalestack servers
     private
     def build_connect_url(endpoint)
       "https://" + @transfer_server + endpoint
@@ -153,8 +153,8 @@ module Sep6Client
         return
       end
 
-      File.open(@log_file, 'a') { |f| f.write(Time.now.utc.rfc822 + " [CoinqvestMerchantSDK] " + text + "\n") }
-      # print Time.now.utc.rfc822 + " [CoinqvestMerchantSDK] " + text + "\n"
+      File.open(@log_file, 'a') { |f| f.write(Time.now.utc.rfc822 + " [Whalestack] " + text + "\n") }
+      # print Time.now.utc.rfc822 + " [Whalestack] " + text + "\n"
 
     end
 

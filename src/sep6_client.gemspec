@@ -6,10 +6,10 @@ Gem::Specification.new do |s|
   s.name        = 'sep6_client'
   s.version     = Sep6Client::CLIENT_VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ['COINQVEST LLC']
-  s.email       = ['service@coinqvest.com']
-  s.homepage    = 'https://www.coinqvest.com'
-  s.summary     = %q{Ruby based Stellar SEP-6 Client by COINQVEST}
+  s.authors     = ['Whalestack LLC']
+  s.email       = ['service@whalestack.com']
+  s.homepage    = 'https://www.whalestack.com'
+  s.summary     = %q{Ruby based Stellar SEP-6 Client by Whalestack}
   s.licenses    = ['Apache-2.0']
   s.required_ruby_version = '>= 2.0.0'
 
